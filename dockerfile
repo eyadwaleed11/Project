@@ -1,5 +1,5 @@
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
 WORKDIR /app
 EXPOSE 80
-COPY bin/Debug/net8.0/ ./
+COPY . .
 ENTRYPOINT ["dotnet", "YourApiProjectName.dll"]
